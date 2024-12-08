@@ -1,0 +1,1202 @@
+[
+  {
+    "mssv": 20160001,
+    "ten": "Hoàng Thảo",
+    "cpa": 2.42,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200002,
+    "ten": "Đặng Ngân",
+    "cpa": 0.39,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20240003,
+    "ten": "Trịnh Như",
+    "cpa": 2.34,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20220004,
+    "ten": "Phan Bảo",
+    "cpa": 0.03,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20240005,
+    "ten": "Đỗ Khoa",
+    "cpa": 0.19,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20180006,
+    "ten": "Ngô Châu",
+    "cpa": 2.28,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150007,
+    "ten": "Lê Hân",
+    "cpa": 1.51,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180008,
+    "ten": "Huỳnh Khang",
+    "cpa": 1.12,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20180009,
+    "ten": "Ngô Uyên",
+    "cpa": 2.3,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230010,
+    "ten": "Đặng Trí",
+    "cpa": 3.58,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20210011,
+    "ten": "Bùi Tuấn",
+    "cpa": 0.33,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20150012,
+    "ten": "Huỳnh Đạt",
+    "cpa": 0.79,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20220013,
+    "ten": "Đặng Đạt",
+    "cpa": 1.94,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180014,
+    "ten": "Trương Trang",
+    "cpa": 0.7,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20240015,
+    "ten": "Ngô Quỳnh",
+    "cpa": 2.31,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190016,
+    "ten": "Đinh Kiệt",
+    "cpa": 3.5,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160017,
+    "ten": "Vũ Trang",
+    "cpa": 3.88,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20170018,
+    "ten": "Lê Tuấn",
+    "cpa": 3.75,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160019,
+    "ten": "Ngô Như",
+    "cpa": 3.52,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240020,
+    "ten": "Đinh Khoa",
+    "cpa": 3.92,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150021,
+    "ten": "Trương Hoàng",
+    "cpa": 1.19,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20220022,
+    "ten": "Vũ Long",
+    "cpa": 2.17,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190023,
+    "ten": "Dương Minh",
+    "cpa": 1.36,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20210024,
+    "ten": "Hồ Minh",
+    "cpa": 0.88,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20230025,
+    "ten": "Võ Trân",
+    "cpa": 2.27,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180026,
+    "ten": "Hoàng Hưng",
+    "cpa": 2.26,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240027,
+    "ten": "Phan Phúc",
+    "cpa": 1.3,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20180028,
+    "ten": "Trần Phát",
+    "cpa": 3.77,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190029,
+    "ten": "Bùi Huy ",
+    "cpa": 1.75,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160030,
+    "ten": "Huỳnh Long",
+    "cpa": 0.54,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20230031,
+    "ten": "Hoàng Anh",
+    "cpa": 1.54,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200032,
+    "ten": "Vũ Yến",
+    "cpa": 0.48,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20220033,
+    "ten": "Phan Vy",
+    "cpa": 3.35,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240034,
+    "ten": "Ngô Ngân",
+    "cpa": 2.19,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200035,
+    "ten": "Nguyễn Bảo",
+    "cpa": 2.45,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160036,
+    "ten": "Trương Hưng",
+    "cpa": 3.28,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160037,
+    "ten": "Vũ Trâm",
+    "cpa": 0.39,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20170038,
+    "ten": "Đinh Yến",
+    "cpa": 3.17,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160039,
+    "ten": "Phan Trí",
+    "cpa": 0.82,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20170040,
+    "ten": "Trần Thy",
+    "cpa": 1.8,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230041,
+    "ten": "Phạm My",
+    "cpa": 0.42,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20150042,
+    "ten": "Huỳnh Ngân",
+    "cpa": 1.11,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20240043,
+    "ten": "Phạm Khoa",
+    "cpa": 2.79,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20210044,
+    "ten": "Nguyễn Tài",
+    "cpa": 3.41,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20210045,
+    "ten": "Đỗ Long",
+    "cpa": 2.39,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230046,
+    "ten": "Hồ Nghi",
+    "cpa": 0.29,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20240047,
+    "ten": "Vũ Thư",
+    "cpa": 2.88,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200048,
+    "ten": "Đặng Quân",
+    "cpa": 1.39,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20240049,
+    "ten": "Hồ An",
+    "cpa": 2.66,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240050,
+    "ten": "Dương Phong",
+    "cpa": 3.55,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230051,
+    "ten": "Võ Vy",
+    "cpa": 3.68,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230052,
+    "ten": "Đặng Đạt",
+    "cpa": 3.04,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20170053,
+    "ten": "Huỳnh Minh",
+    "cpa": 3,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190054,
+    "ten": "Đỗ Minh",
+    "cpa": 0.8,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20170055,
+    "ten": "Đinh Thịnh",
+    "cpa": 1.22,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20220056,
+    "ten": "Ngô Long",
+    "cpa": 0.96,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20240057,
+    "ten": "Đặng Trí",
+    "cpa": 1.49,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20180058,
+    "ten": "Trần Hiếu",
+    "cpa": 1.3,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20220059,
+    "ten": "Bùi Nhi",
+    "cpa": 2.1,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230060,
+    "ten": "Hồ Khang",
+    "cpa": 0.58,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20220061,
+    "ten": "Trần Tài",
+    "cpa": 3.08,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230062,
+    "ten": "Bùi Thảo",
+    "cpa": 2.48,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20220063,
+    "ten": "Hồ Ngọc",
+    "cpa": 1.15,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20210064,
+    "ten": "Trương Linh",
+    "cpa": 0.27,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20190065,
+    "ten": "Ngô Hoàng",
+    "cpa": 2.94,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190066,
+    "ten": "Hoàng Hưng",
+    "cpa": 1.05,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20150067,
+    "ten": "Hoàng Anh",
+    "cpa": 1.73,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200068,
+    "ten": "Vũ Phát",
+    "cpa": 1.96,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240069,
+    "ten": "Đinh Long",
+    "cpa": 0.7,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20170070,
+    "ten": "Huỳnh Quỳnh",
+    "cpa": 3.96,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180071,
+    "ten": "Trần Hiếu",
+    "cpa": 1.26,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20210072,
+    "ten": "Trần My",
+    "cpa": 3.37,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200073,
+    "ten": "Hoàng Trân",
+    "cpa": 0.01,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20240074,
+    "ten": "Vũ Hiếu",
+    "cpa": 0.37,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20170075,
+    "ten": "Trần Quân",
+    "cpa": 0.31,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20190076,
+    "ten": "Dương Thịnh",
+    "cpa": 2.43,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20210077,
+    "ten": "Dương Thảo",
+    "cpa": 1.57,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20210078,
+    "ten": "Ngô Hưng",
+    "cpa": 0.14,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20200079,
+    "ten": "Ngô Ngân",
+    "cpa": 1.7,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240080,
+    "ten": "Bùi Long",
+    "cpa": 2.28,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180081,
+    "ten": "Hoàng Nhi",
+    "cpa": 2.8,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190082,
+    "ten": "Dương Duy",
+    "cpa": 2.17,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20170083,
+    "ten": "Đặng Tuấn",
+    "cpa": 3.13,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20170084,
+    "ten": "Vũ Kiệt",
+    "cpa": 3.1,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230085,
+    "ten": "Đinh Thư",
+    "cpa": 2.89,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20210086,
+    "ten": "Phạm Nam",
+    "cpa": 3.04,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20210087,
+    "ten": "Phan Thư",
+    "cpa": 3,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20220088,
+    "ten": "Huỳnh Trúc",
+    "cpa": 0.45,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20220089,
+    "ten": "Trương Phương",
+    "cpa": 2.69,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190090,
+    "ten": "Hoàng Phương",
+    "cpa": 1.68,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20170091,
+    "ten": "Hồ Thy",
+    "cpa": 1.36,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20230092,
+    "ten": "Trần Quỳnh",
+    "cpa": 1.45,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20190093,
+    "ten": "Vũ Đạt",
+    "cpa": 0.56,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20240094,
+    "ten": "Bùi Thư",
+    "cpa": 0.06,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20160095,
+    "ten": "Đặng Tiên",
+    "cpa": 2.94,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180096,
+    "ten": "Ngô Tuấn",
+    "cpa": 1.89,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20170097,
+    "ten": "Đinh Khôi",
+    "cpa": 2.02,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20220098,
+    "ten": "Đỗ Thy",
+    "cpa": 2.74,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180099,
+    "ten": "Phạm Long",
+    "cpa": 3.39,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20220100,
+    "ten": "Nguyễn Hưng",
+    "cpa": 0.82,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20150101,
+    "ten": "Huỳnh Phúc",
+    "cpa": 1.04,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20150102,
+    "ten": "Hoàng Nhân",
+    "cpa": 2.74,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160103,
+    "ten": "Phạm Khoa",
+    "cpa": 3.52,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150104,
+    "ten": "Trương Bảo",
+    "cpa": 0.28,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20230105,
+    "ten": "Võ Như",
+    "cpa": 1.69,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230106,
+    "ten": "Đỗ Duy",
+    "cpa": 0.94,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20230107,
+    "ten": "Nguyễn Vy",
+    "cpa": 1.08,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20200108,
+    "ten": "Phan Phúc",
+    "cpa": 1.35,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20200109,
+    "ten": "Đinh Uyên",
+    "cpa": 3.67,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240110,
+    "ten": "Đặng Trí",
+    "cpa": 0.32,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20170111,
+    "ten": "Trần Đạt",
+    "cpa": 0.71,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20170112,
+    "ten": "Đỗ Khang",
+    "cpa": 1.84,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180113,
+    "ten": "Đinh Phúc",
+    "cpa": 1.71,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150114,
+    "ten": "Nguyễn Như",
+    "cpa": 0.29,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20160115,
+    "ten": "Bùi Long",
+    "cpa": 3.69,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190116,
+    "ten": "Trương Bảo",
+    "cpa": 2.67,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240117,
+    "ten": "Dương Khôi",
+    "cpa": 2.81,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230118,
+    "ten": "Nguyễn Phong",
+    "cpa": 1.14,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20190119,
+    "ten": "Ngô Yến",
+    "cpa": 0.96,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20150120,
+    "ten": "Trịnh An",
+    "cpa": 1.21,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20240121,
+    "ten": "Vũ Minh",
+    "cpa": 1.22,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20180122,
+    "ten": "Trịnh Thy",
+    "cpa": 1.36,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20180123,
+    "ten": "Đỗ Tiên",
+    "cpa": 2.26,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190124,
+    "ten": "Dương Phúc",
+    "cpa": 2.53,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180125,
+    "ten": "Phan Ngọc",
+    "cpa": 0.87,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20240126,
+    "ten": "Bùi Bảo",
+    "cpa": 0.81,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20170127,
+    "ten": "Vũ Anh",
+    "cpa": 0.72,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20150128,
+    "ten": "Phạm Phương",
+    "cpa": 3.37,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20210129,
+    "ten": "Hồ Trúc",
+    "cpa": 3.67,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200130,
+    "ten": "Huỳnh Hiếu",
+    "cpa": 1.18,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20200131,
+    "ten": "Đặng Nhi",
+    "cpa": 2.8,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190132,
+    "ten": "Đinh Nam",
+    "cpa": 0.91,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20190133,
+    "ten": "Hoàng Nhi",
+    "cpa": 2.61,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230134,
+    "ten": "Dương Thư",
+    "cpa": 3.54,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160135,
+    "ten": "Phạm Thịnh",
+    "cpa": 2.64,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190136,
+    "ten": "Bùi Trang",
+    "cpa": 1.95,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190137,
+    "ten": "Hoàng Khoa",
+    "cpa": 3.25,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190138,
+    "ten": "Trương Thảo",
+    "cpa": 1.51,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150139,
+    "ten": "Hồ Phong",
+    "cpa": 3.69,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230140,
+    "ten": "Phan Như",
+    "cpa": 2.13,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200141,
+    "ten": "Vũ Nhi",
+    "cpa": 1.17,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20170142,
+    "ten": "Nguyễn Nhi",
+    "cpa": 1.48,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20150143,
+    "ten": "Đỗ Tiên",
+    "cpa": 3.41,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150144,
+    "ten": "Huỳnh Vy",
+    "cpa": 2.07,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230145,
+    "ten": "Nguyễn Hiếu",
+    "cpa": 1.09,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20190146,
+    "ten": "Hoàng Trúc",
+    "cpa": 2.54,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150147,
+    "ten": "Trịnh My",
+    "cpa": 1.78,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200148,
+    "ten": "Phạm Nghi",
+    "cpa": 2.87,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200149,
+    "ten": "Lê Hiếu",
+    "cpa": 2.17,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20220150,
+    "ten": "Đặng Quỳnh",
+    "cpa": 3.06,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180151,
+    "ten": "Hồ Khoa",
+    "cpa": 0.36,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20220152,
+    "ten": "Võ Bảo",
+    "cpa": 0.08,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20230153,
+    "ten": "Hồ Minh",
+    "cpa": 2.23,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180154,
+    "ten": "Vũ Khôi",
+    "cpa": 1.52,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160155,
+    "ten": "Ngô Phát",
+    "cpa": 2.91,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150156,
+    "ten": "Hồ Nhi",
+    "cpa": 3.6,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200157,
+    "ten": "Bùi Hân",
+    "cpa": 1.1,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20190158,
+    "ten": "Dương Thy",
+    "cpa": 2.78,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160159,
+    "ten": "Bùi Long",
+    "cpa": 2.2,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160160,
+    "ten": "Bùi Trí",
+    "cpa": 2.72,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190161,
+    "ten": "Đinh Quỳnh",
+    "cpa": 3.12,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20170162,
+    "ten": "Nguyễn Thảo",
+    "cpa": 0.49,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20230163,
+    "ten": "Phan Trí",
+    "cpa": 0.7,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20220164,
+    "ten": "Nguyễn Thư",
+    "cpa": 1.9,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20170165,
+    "ten": "Phạm Ý",
+    "cpa": 3.99,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20220166,
+    "ten": "Nguyễn Thảo",
+    "cpa": 2.13,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200167,
+    "ten": "Bùi Hưng",
+    "cpa": 0.11,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20220168,
+    "ten": "Ngô Kiệt",
+    "cpa": 3.51,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20220169,
+    "ten": "Dương Nghi",
+    "cpa": 1.03,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20240170,
+    "ten": "Vũ Phương",
+    "cpa": 0.13,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20220171,
+    "ten": "Trần Quân",
+    "cpa": 1.51,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200172,
+    "ten": "Lê Huy ",
+    "cpa": 1.83,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240173,
+    "ten": "Phạm Quỳnh",
+    "cpa": 0.09,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20160174,
+    "ten": "Đinh Nhi",
+    "cpa": 0.77,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20180175,
+    "ten": "Trương My",
+    "cpa": 0.93,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20240176,
+    "ten": "Hồ Hưng",
+    "cpa": 3.91,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200177,
+    "ten": "Hoàng Quỳnh",
+    "cpa": 1.08,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20210178,
+    "ten": "Võ Nhân",
+    "cpa": 0.83,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20220179,
+    "ten": "Phạm Vy",
+    "cpa": 3.39,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20220180,
+    "ten": "Dương Tiên",
+    "cpa": 0.27,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20230181,
+    "ten": "Đỗ Tài",
+    "cpa": 1.62,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190182,
+    "ten": "Phạm Hiếu",
+    "cpa": 2.34,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240183,
+    "ten": "Nguyễn Hưng",
+    "cpa": 1.43,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20230184,
+    "ten": "Bùi Trân",
+    "cpa": 3.17,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200185,
+    "ten": "Trịnh Tài",
+    "cpa": 1.91,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20170186,
+    "ten": "Đặng Trí",
+    "cpa": 1.8,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230187,
+    "ten": "Bùi Hưng",
+    "cpa": 1.8,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160188,
+    "ten": "Đinh Ý",
+    "cpa": 0.96,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20210189,
+    "ten": "Lê Thư",
+    "cpa": 3.53,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20230190,
+    "ten": "Đỗ Trí",
+    "cpa": 1.98,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20210191,
+    "ten": "Hồ Thịnh",
+    "cpa": 2.33,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180192,
+    "ten": "Dương Trí",
+    "cpa": 3.57,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20190193,
+    "ten": "Đỗ Thy",
+    "cpa": 1.72,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150194,
+    "ten": "Ngô Yến",
+    "cpa": 1.71,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160195,
+    "ten": "Hoàng Linh",
+    "cpa": 3.36,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20180196,
+    "ten": "Võ Ngọc",
+    "cpa": 1.49,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20240197,
+    "ten": "Phạm Uyên",
+    "cpa": 3.36,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20160198,
+    "ten": "Phạm Uyên",
+    "cpa": 0.36,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20220199,
+    "ten": "Phạm Thy",
+    "cpa": 0.94,
+    "canhCao": 2
+  },
+  {
+    "mssv": 20150200,
+    "ten": "Bùi Linh",
+    "cpa": 0.17,
+    "canhCao": 3
+  }
+]
