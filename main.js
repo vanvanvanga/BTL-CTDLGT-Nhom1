@@ -12,7 +12,25 @@ const log = require("./input.js"); // nhập các hàm/biến... từ file này
 const Van = require("./Van.js");
 const Dat = require("./Dat.js");
 const Minh = require("./Minh.js");
+const Trang = require("./Trang.js");
 
+switch (cmd[2]) {
+  case "list":
+    console.log(Trang.list(data));
+    break;
+
+  case "find":
+    if (cmd[3]) {
+      console.log(Trang.find(cmd[3], data));
+    } else {
+      console.log("Vui lòng cung cấp MSSV để tìm kiếm.");
+    }
+    break;
+
+  default:
+    console.log("Lệnh không hợp lệ.");
+    break;
+}
 switch (cmd[2]) {
   case "modify":
     if (cmd[3] === "cpa") {
