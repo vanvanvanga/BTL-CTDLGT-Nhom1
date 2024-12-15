@@ -13,6 +13,24 @@ const Van = require("./Van.js");
 const Dat = require("./Dat.js");
 const Minh = require("./Minh.js");
 
+switch (cmd[2]) {
+  case "modify":
+    if (cmd[3] === "cpa") {
+      const result = Dat.modifyCpa(cmd[4], parseFloat(cmd[5]), data);
+      console.log(result);
+    }
+    break;
+
+  case "findtop":
+    const topResult = Dat.findTop(parseInt(cmd[3]), data);
+    console.log(topResult);
+    break;
+
+  default:
+    console.log("Lệnh không hợp lệ.");
+    break;
+}
+
 const path = "./data.json";
 let data = []; // mảng chứa thông tin sinh viên
 
