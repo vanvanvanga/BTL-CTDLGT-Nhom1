@@ -10,6 +10,7 @@
 const fs = require("fs");
 const log = require("./input.js"); // nhập các hàm/biến... từ file này
 const Van = require("./Van.js");
+const Dat = require("./Dat.js");
 
 const path = "./data.json";
 let data = []; // mảng chứa thông tin sinh viên
