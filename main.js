@@ -14,8 +14,37 @@ const Dat = require("./Dat.js");
 const Minh = require("./Minh.js");
 const Trang = require("./Trang.js");
 
+const path = "./data.json";
+let data = []; // mảng chứa thông tin sinh viên
+
+if (fs.existsSync(path) && fs.statSync(path).size !== 0) {
+  const contents = fs.readFileSync(path, "utf8");
+  data = JSON.parse(contents);
+} // copy thông tin từ file data.json sang mảng data
+function help() {
+  console.log(`
+    Chào mừng đến với trình quản lý sinh viên ahihihi v0.1!
+    Dưới đây là danh sách các câu lệnh bạn có thể dùng:
+      help                          Hiển thị các câu lệnh có thể sử dụng trong chương trình. 
+      list                          In ra danh sách sinh viên đang học
+      find <mssv>                   Tìm sinh viên có mã số sinh viên <mssv>
+      modify cpa <mssv> <cpa_mới>   Thay đổi cpa của sinh viên
+      findtop <n>                   Tìm <n> sinh viên có cpa cao nhất
+      findbottom <n>                Tìm <n> sinh viên có cpa thấp nhất
+      find canhcao                  Tìm các sinh viên đang bị cảnh cáo
+      cnt <a> <b>                   Đếm số sinh viên có điểm cpa là nằm trong đoạn [a;b]
+      cntSuspnd                     Tính số lượng sinh viên phải đình chỉ học
+  `);
+}
+
+let cmd = process.argv; // mảng chứa các tham số trong câu lệnh người dùng nhập
+
 switch (cmd[2]) {
-  case "list":
+  case "help":
+    help();
+    break;
+
+    case "list":
     console.log(Trang.list(data));
     break;
 
@@ -27,12 +56,7 @@ switch (cmd[2]) {
     }
     break;
 
-  default:
-    console.log("Lệnh không hợp lệ.");
-    break;
-}
-switch (cmd[2]) {
-  case "modify":
+    case "modify":
     if (cmd[3] === "cpa") {
       const result = Dat.modifyCpa(cmd[4], parseFloat(cmd[5]), data);
       console.log(result);
@@ -44,38 +68,25 @@ switch (cmd[2]) {
     console.log(topResult);
     break;
 
-  default:
-    console.log("Lệnh không hợp lệ.");
+  case "fill":
+    log.addRand(cmd[3], data);
     break;
-}
 
-const path = "./data.json";
-let data = []; // mảng chứa thông tin sinh viên
-
-if (fs.existsSync(path) && fs.statSync(path).size !== 0) {
-  const contents = fs.readFileSync(path, "utf8");
-  data = JSON.parse(contents);
-} // copy thông tin từ file data.json sang mảng data
-
-let cmd = process.argv; // mảng chứa các tham số trong câu lệnh người dùng nhập
-
-switch (cmd[2]) {
   case "input":
     log.add(cmd, data);
     break;
 
   case "cnt":
-    console.log(Van.cntBtwn(cmd[3], cmd[4], data));
+    console.log(Van.cntBtwn(cmd, data));
     break;
 
   case "cntSuspnd":
-    console.log(Van.cntSuspnd(data));
+    console.log(Van.cntSuspnd(data)); // will take some time
+    console.log("Trong lúc chờ, hãy đi châm một ấm trà.");
     break;
 
   default:
-    console.log(cmd);
-    //console.log("Da co loi xay ra hoac khong co lenh nao duoc nhap.");
+    console.log("Đã có lỗi xảy ra hoặc không có lệnh nào được nhập.");
+    console.log("Nhập `help` để xem các câu lệnh có thể sử dụng.");
     break;
 }
-
-console.log(cmd);
