@@ -77,13 +77,16 @@ switch (cmd[2]) {
     log.add(cmd, data);
     break;
 
+  case "forceFill":
+    log.addExtended(data);
+    break;
+
   case "cnt":
-    console.log(Van.cntBtwn(cmd[3], cmd[4], data));
+    Van.cntBtwn(cmd[3], cmd[4], data);
     break;
 
   case "cntSuspnd":
-    console.log(Van.cntSuspnd(data)); // will take some time
-    console.log("Trong lúc chờ, hãy đi châm một ấm trà.");
+    console.log(Van.cntSuspnd(data));
     break;
 
   default:
