@@ -8,6 +8,7 @@
 // ---------------------
 
 const fs = require("fs");
+const ap = require("./async-prompt");
 const log = require("./input.js"); // nhập các hàm/biến... từ file này
 const Van = require("./Van.js");
 // const Dat = require("./Dat.js");
@@ -38,9 +39,19 @@ function help() {
   `);
 }
 
-let cmd = process.argv; // mảng chứa các tham số trong câu lệnh người dùng nhập
+let cmd, cmd_a, cmd_s; // mảng chứa các tham số trong câu lệnh người dùng nhập
+async function prompt() {
+  cmd = await ap("Vui lòng nhập câu lệnh để chương trình xử lý: ");
+  cmd_a = cmd.split('"');
+  cmd_s = cmd.split(" ");
+  // console.log(cmd);
+  // console.log(cmd_a);
+  // console.log(cmd_s);
+}
 
-switch (cmd[2]) {
+prompt();
+
+switch (cmd[0]) {
   case "help":
     help();
     break;
@@ -50,27 +61,27 @@ switch (cmd[2]) {
     break;
 
   case "find":
-    if (cmd[3]) {
-      console.log(Trang.find(cmd[3], data));
+    if (cmd[1]) {
+      console.log(Trang.find(cmd[1], data));
     } else {
       console.log("Vui lòng cung cấp MSSV để tìm kiếm.");
     }
     break;
 
-  case "modify":
-    if (cmd[3] === "cpa") {
-      const result = Dat.modifyCpa(cmd[4], parseFloat(cmd[5]), data);
-      console.log(result);
-    }
-    break;
+  // case "modify":
+  //   if (cmd[1] === "cpa") {
+  //     const result = Dat.modifyCpa(cmd[2], parseFloat(cmd[3]), data);
+  //     console.log(result);
+  //   }
+  //   break;
 
   // case "findtop":
-  //   const topResult = Dat.findTop(parseInt(cmd[3]), data);
+  //   const topResult = Dat.findTop(parseInt(cmd[1]), data);
   //   console.log(topResult);
   //   break;
 
   case "fill":
-    log.addRand(cmd[3], data);
+    log.addRand(cmd[1], data);
     break;
 
   case "input":
@@ -82,7 +93,7 @@ switch (cmd[2]) {
     break;
 
   case "cnt":
-    Van.cntBtwn(cmd[3], cmd[4], data);
+    Van.cntBtwn(cmd[1], cmd[2], data);
     break;
 
   case "cntSuspnd":
