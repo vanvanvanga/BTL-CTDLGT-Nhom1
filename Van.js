@@ -46,7 +46,7 @@ function cntSuspnd(data) {
     }
   }
 
-  return count;
+  console.log(`Số sinh viên bị đình chỉ học là: ${count}.`); 
 }
 
 module.exports = {

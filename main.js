@@ -102,7 +102,7 @@ async function prompt() {
       break;
   
     case "cntSuspnd":
-      console.log("Số sinh viên bị đình chỉ học là: " + Van.cntSuspnd(data) + ".");
+      Van.cntSuspnd(data);
       prompt();
       break;
     
