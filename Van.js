@@ -22,8 +22,6 @@ async function cntBtwn(a, b, data) {
     // }, 10000);
   });
 
-  console.log("Chương trình đang chạy...");
-
   console.log(
     "Số lượng sinh viên có CPA nằm trong đoạn [" +
       a +
