@@ -1,4 +1,7 @@
 function cntBtwn(a, b, data) {
+  a = parseFloat(a);
+  b = parseFloat(b);
+  
   // check xem a, b có là số chưa:
   if (typeof(a) !== "number" || typeof(b) !== "number") {
     return "Cận dưới hoặc trên chưa là giá trị số!";

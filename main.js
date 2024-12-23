@@ -10,8 +10,8 @@
 const fs = require("fs");
 const log = require("./input.js"); // nhập các hàm/biến... từ file này
 const Van = require("./Van.js");
-const Dat = require("./Dat.js");
-const Minh = require("./Minh.js");
+// const Dat = require("./Dat.js");
+// const Minh = require("./Minh.js");
 const Trang = require("./Trang.js");
 
 const path = "./data.json";
@@ -21,6 +21,7 @@ if (fs.existsSync(path) && fs.statSync(path).size !== 0) {
   const contents = fs.readFileSync(path, "utf8");
   data = JSON.parse(contents);
 } // copy thông tin từ file data.json sang mảng data
+
 function help() {
   console.log(`
     Chào mừng đến với trình quản lý sinh viên ahihihi v0.1!
@@ -44,7 +45,7 @@ switch (cmd[2]) {
     help();
     break;
 
-    case "list":
+  case "list":
     console.log(Trang.list(data));
     break;
 
@@ -56,17 +57,17 @@ switch (cmd[2]) {
     }
     break;
 
-    case "modify":
+  case "modify":
     if (cmd[3] === "cpa") {
       const result = Dat.modifyCpa(cmd[4], parseFloat(cmd[5]), data);
       console.log(result);
     }
     break;
 
-  case "findtop":
-    const topResult = Dat.findTop(parseInt(cmd[3]), data);
-    console.log(topResult);
-    break;
+  // case "findtop":
+  //   const topResult = Dat.findTop(parseInt(cmd[3]), data);
+  //   console.log(topResult);
+  //   break;
 
   case "fill":
     log.addRand(cmd[3], data);
@@ -77,7 +78,7 @@ switch (cmd[2]) {
     break;
 
   case "cnt":
-    console.log(Van.cntBtwn(cmd, data));
+    console.log(Van.cntBtwn(cmd[3], cmd[4], data));
     break;
 
   case "cntSuspnd":
