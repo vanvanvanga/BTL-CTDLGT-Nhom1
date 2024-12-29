@@ -2,18 +2,18 @@ const fs = require("fs");
 
 class Student {
   constructor(mssv, ten, cpa, canhCao) {
-    this.mssv = mssv,
-    this.ten = ten,
-    this.cpa = cpa,
-    this.canhCao = canhCao
+    (this.mssv = mssv),
+      (this.ten = ten),
+      (this.cpa = cpa),
+      (this.canhCao = canhCao);
   }
 }
 
 function add(cmd, data) {
   let mssv = parseInt(cmd[3]),
-  ten = cmd[4],
-  cpa = parseFloat(cmd[5]),
-  canhCao = parseInt(cmd[6]);
+    ten = cmd[4],
+    cpa = parseFloat(cmd[5]),
+    canhCao = parseInt(cmd[6]);
 
   if (mssv.length !== 8) {
     console.log("Loi: MSSV phai su dung 8 ki tu.");
@@ -36,11 +36,11 @@ function add(cmd, data) {
 }
 
 function rnd(lim, type) {
-  if (type === '-f') {
+  if (type === "-f") {
     return (Math.random() * lim).toFixed(2);
   }
 
-  if (type === '-i') {
+  if (type === "-i") {
     return Math.floor(Math.random() * lim);
   }
 }
@@ -122,16 +122,15 @@ for (let i = 0; i < 10; i++) {
   years[i] = i * 10000 + 20150000;
 }
 
-// for funsies only
+// thêm một số lượng number sinh viên vào mảng với năm học ngẫu nhiên
 function addRand(number, data) {
-  let start = data.length > 0 ? parseInt((data.at(-1).mssv).toString().substring(4, 8)) : 0;
+  let start =
+    data.length > 0 ? parseInt(data.at(-1).mssv.toString().substring(4, 8)) : 0;
 
   for (let i = 0; i < number; i++) {
-    let mssv = years[rnd(10, '-i')] + ++start,
-      ten = ho[rnd(18, '-i')] +
-      " " +
-      tenRieng[rnd(50, '-i')],
-      cpa = parseFloat(rnd(4, '-f')),
+    let mssv = years[rnd(10, "-i")] + ++start,
+      ten = ho[rnd(18, "-i")] + " " + tenRieng[rnd(50, "-i")],
+      cpa = parseFloat(rnd(4, "-f")),
       canhCao;
 
     // mức 3 cpa <= 0.5, mức 2: 0.5< cpa <= 1.0, mức 1: 1.0 < cpa <= 1.5
@@ -145,9 +144,55 @@ function addRand(number, data) {
       canhCao = 0;
     }
 
+    let student = new Student(mssv, ten, cpa, canhCao);
+    data.push(student);
+  }
+  save(data);
+}
+
+function addExtended(data) {
+  // xóa dữ liệu hiện có trong mảng data
+  data.length = 0;
+
+  // tạo 9999 sinh viên cho mỗi năm học
+  for (let i = 0; i < 10; i++) {
+    add9999(years[i]);
+  }
+
+  function add9999(schlyr) {
+    for (let i = 0; i < 9999; i++) {
+      let mssv = schlyr + i,
+        ten = ho[rnd(18, "-i")] + " " + tenRieng[rnd(50, "-i")],
+        cpa = parseFloat(rnd(4, "-f")),
+        canhCao;
+
+      // mức 3 cpa <= 0.5, mức 2: 0.5< cpa <= 1.0, mức 1: 1.0 < cpa <= 1.5
+      if (cpa <= 0.5) {
+        canhCao = 3;
+      } else if (cpa <= 1.0) {
+        canhCao = 2;
+      } else if (cpa <= 1.5) {
+        canhCao = 1;
+      } else {
+        canhCao = 0;
+      }
+
       let student = new Student(mssv, ten, cpa, canhCao);
       data.push(student);
+    }
   }
+
+  // trộn mảng data
+  function scramble(array) { // mooched off https://stackoverflow.com/a/12646864
+    for (let i = array.length - 1; i >= 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  scramble(data);
+
+  // lưu vào file .json
   save(data);
 }
 
@@ -161,4 +206,5 @@ function save(data) {
 module.exports = {
   add,
   addRand,
+  addExtended
 }; // xuất các hàm này để dùng ở file khác

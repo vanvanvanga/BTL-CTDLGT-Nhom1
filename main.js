@@ -8,6 +8,7 @@
 // ---------------------
 
 const fs = require("fs");
+const ap = require("./async-prompt");
 const log = require("./input.js"); // nhập các hàm/biến... từ file này
 const Van = require("./Van.js");
 const Dat = require("./Dat.js");
@@ -21,6 +22,7 @@ if (fs.existsSync(path) && fs.statSync(path).size !== 0) {
   const contents = fs.readFileSync(path, "utf8");
   data = JSON.parse(contents);
 } // copy thông tin từ file data.json sang mảng data
+
 function help() {
   console.log(`
     Chào mừng đến với trình quản lý sinh viên ahihihi v0.1!
@@ -37,56 +39,88 @@ function help() {
   `);
 }
 
-let cmd = process.argv; // mảng chứa các tham số trong câu lệnh người dùng nhập
+let cmd, cmd_a, cmd_s; // mảng chứa các tham số trong câu lệnh người dùng nhập
 
-switch (cmd[2]) {
-  case "help":
-    help();
-    break;
+async function prompt() {
+  cmd = await ap("Nhập câu lệnh và nhấn Enter để chương trình xử lý.\n");
+  cmd_a = cmd.split('"');
+  cmd_s = cmd.split(" ");
+  // console.log(cmd);
+  // console.log(cmd_a);
+  // console.log(cmd_s);
+
+  switch (cmd_s[0]) {
+    case "help":
+      help();
+      prompt();
+      break;
 
     case "list":
-    console.log(Trang.list(data));
-    break;
+      console.log(Trang.list(data));
+      prompt();
+      break;
 
-  case "find":
-    if (cmd[3]) {
-      console.log(Trang.find(cmd[3], data));
-    } else {
-      console.log("Vui lòng cung cấp MSSV để tìm kiếm.");
-    }
-    break;
+    case "find":
+      if (cmd_s[1] === "canhcao") {
+        Minh.findCanhCao(data);
+      } else {
+        Trang.find(cmd_s[1], data);
+      }
+      prompt();
+      break;
 
     case "modify":
-    if (cmd[3] === "cpa") {
-      const result = Dat.modifyCpa(cmd[4], parseFloat(cmd[5]), data);
-      console.log(result);
-    }
-    break;
+      if (cmd_s[1] === "cpa") {
+        Dat.modifyCpa(data, parseFloat(cmd_s[2]), cmd_s[3]);
+      }
+      prompt();
+      break;
 
-  case "findtop":
-    const topResult = Dat.findTop(parseInt(cmd[3]), data);
-    console.log(topResult);
-    break;
+    case "findtop":
+      Dat.findTopN(data, parseInt(cmd_s[1]));
+      prompt();
+      break;
 
-  case "fill":
-    log.addRand(cmd[3], data);
-    break;
+    case "findbottom":
+      Minh.findBottomN(data, parseInt(cmd_s[1]));
+      prompt();
+      break;
 
-  case "input":
-    log.add(cmd, data);
-    break;
+    case "fill":
+      log.addRand(cmd_s[1], data);
+      prompt();
+      break;
 
-  case "cnt":
-    console.log(Van.cntBtwn(cmd, data));
-    break;
+    case "input":
+      log.add(cmd, data);
+      prompt();
+      break;
 
-  case "cntSuspnd":
-    console.log(Van.cntSuspnd(data)); // will take some time
-    console.log("Trong lúc chờ, hãy đi châm một ấm trà.");
-    break;
+    case "forceFill":
+      log.addExtended(data);
+      prompt();
+      break;
 
-  default:
-    console.log("Đã có lỗi xảy ra hoặc không có lệnh nào được nhập.");
-    console.log("Nhập `help` để xem các câu lệnh có thể sử dụng.");
-    break;
+    case "cnt":
+      Van.cntBtwn(cmd_s[1], cmd_s[2], data);
+      prompt();
+      break;
+
+    case "cntSuspnd":
+      Van.cntSuspnd(data);
+      prompt();
+      break;
+
+    case "end":
+      console.log("Chương trình kết thúc tại đây.");
+      break;
+
+    default:
+      console.log("Đã có lỗi xảy ra hoặc không có lệnh nào được nhập.");
+      console.log("Nhập `help` để xem các câu lệnh có thể sử dụng.");
+      prompt();
+      break;
+  }
 }
+
+prompt();

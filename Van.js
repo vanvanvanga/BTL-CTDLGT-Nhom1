@@ -1,19 +1,36 @@
-function cntBtwn(a, b, data) {
+async function cntBtwn(a, b, data) {
+  a = parseFloat(a);
+  b = parseFloat(b);
+
   // check xem a, b có là số chưa:
-  if (typeof(a) !== "number" || typeof(b) !== "number") {
+  if (typeof a !== "number" || typeof b !== "number") {
     return "Cận dưới hoặc trên chưa là giá trị số!";
   }
 
-  let n = data.length;
-  let count = 0;
+  let soLuong = new Promise((resolve) => {
+    let n = data.length;
+    let count = 0;
 
-  for (let i = 0; i < n; i++) {
-    if (data[i].cpa >= a && data[i].cpa <= b) {
-      count++;
-    }
-  }
+    // setTimeout(() => {
+      for (let i = 0; i < n; i++) {
+        if (data[i].cpa >= a && data[i].cpa <= b) {
+          count++;
+        }
+      }
 
-  return count;
+      resolve(count);
+    // }, 10000);
+  });
+
+  console.log(
+    "Số lượng sinh viên có CPA nằm trong đoạn [" +
+      a +
+      "; " +
+      b +
+      "] là: " +
+      (await soLuong) +
+      "."
+  );
 }
 
 function cntSuspnd(data) {
@@ -29,7 +46,7 @@ function cntSuspnd(data) {
     }
   }
 
-  return count;
+  console.log(`Số sinh viên bị đình chỉ học là: ${count}.`); 
 }
 
 module.exports = {
