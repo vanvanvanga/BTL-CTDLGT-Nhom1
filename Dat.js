@@ -2,9 +2,11 @@ const fs = require("fs");
 const prompt = require("prompt-sync")();
 
 class Student {
-    constructor(mssv, cpa) {
+    constructor(mssv, ten, cpa, canhCao ) {
         this.mssv = mssv;
         this.cpa = cpa;
+        this.ten = ten;
+        this.canhCao = canhCao;
     }
 }
 
