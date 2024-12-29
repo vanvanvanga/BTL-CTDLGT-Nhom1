@@ -5,17 +5,17 @@ async function modifyCpa(students, mssv, newCpa) {
 
   let result = new Promise((resolve, reject) => {
     if (typeof newCpa !== "number" || newCpa < 0 || newCpa > 4) {
-      reject("Invalid CPA value. Please enter a number between 0 and 4.");
+      reject(" Giá trị CPA không hợp lệ. Vui lòng nhập một số từ 0 đến 4.");
     }
 
     const student = students.find((student) => student.mssv === mssv);
     if (!student) {
-      reject(`Student with MSSV ${mssv} not found.`);
+      reject(`Student với MSSV ${mssv} không tìm thấy.`);
     }
 
     student.cpa = newCpa;
     log.save(students);
-    resolve(`Updated CPA for student ${mssv} to ${newCpa}.`);
+    resolve(`CPA đã cập nhật cho sinh viên ${mssv} thành ${newCpa}.`);
   });
 
   console.log(await result);
