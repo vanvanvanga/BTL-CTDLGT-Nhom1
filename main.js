@@ -61,14 +61,10 @@ async function prompt() {
       break;
 
     case "find":
-      // if (cmd_s[1]) {
-      //   console.log(Trang.find(cmd_s[1], data));
-      // } else {
-      //   console.log("Vui lòng cung cấp MSSV để tìm kiếm.");
-      // }
-
       if (cmd_s[1] === "canhcao") {
         Minh.findCanhCao(data);
+      } else {
+        Trang.find(cmd_s[1], data);
       }
       prompt();
       break;

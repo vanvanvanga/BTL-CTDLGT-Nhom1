@@ -34,7 +34,7 @@ async function findCanhCao(students) {
 		resolve();
   });
 
-	console.log(await result);
+	await result;
 }
 
 module.exports = {

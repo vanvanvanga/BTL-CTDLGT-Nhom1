@@ -5,22 +5,25 @@ function list(data) {
   }
 
   // Kết hợp MSSV và họ tên
-  return data
-    .map((sv) => `${sv.mssv} - ${sv.ten}`)
-    .join("\n");
+  return data.map((sv) => `${sv.mssv} - ${sv.ten}`).join("\n");
 }
 
 // Tìm sinh viên theo MSSV
 function find(mssv, data) {
-  const student = data.find((sv) => sv.mssv === parseInt(mssv));
-  if (!student) {
-    return `Không tìm thấy sinh viên có MSSV ${mssv}.`;
-  }
+    if (mssv) {
+      const student = data.find((sv) => sv.mssv === parseInt(mssv));
+      if (!student) {
+        console.log(`Không tìm thấy sinh viên có MSSV ${mssv}.`);
+      }
 
-  return `${student.mssv} "${student.ten}" ${student.cpa} ${student.canhCao}`;
+      console.log(`${student.mssv} "${student.ten}" ${student.cpa} ${student.canhCao}`);
+    } else {
+      console.log("Vui lòng cung cấp MSSV để tìm kiếm.");
+    }
+  
 }
 
 module.exports = {
   list,
-  find
+  find,
 };
