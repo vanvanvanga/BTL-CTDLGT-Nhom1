@@ -1,3 +1,5 @@
+const log = require("./input.js");
+
 async function modifyCpa(students, mssv, newCpa) {
   newCpa = parseFloat(newCpa);
 
@@ -12,6 +14,7 @@ async function modifyCpa(students, mssv, newCpa) {
     }
 
     student.cpa = newCpa;
+    log.save(students);
     resolve(`Updated CPA for student ${mssv} to ${newCpa}.`);
   });
 

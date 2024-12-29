@@ -206,5 +206,6 @@ function save(data) {
 module.exports = {
   add,
   addRand,
-  addExtended
+  addExtended, 
+  save
 }; // xuất các hàm này để dùng ở file khác
