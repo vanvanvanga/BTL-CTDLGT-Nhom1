@@ -51,5 +51,5 @@ function cntSuspnd(data) {
 
 module.exports = {
   cntBtwn,
-  cntSuspnd,
+  cntSuspnd
 };

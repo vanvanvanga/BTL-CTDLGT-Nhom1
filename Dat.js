@@ -9,6 +9,8 @@ class Student {
 }
 
 async function modifyCpa(students, mssv, newCpa) {
+    newCpa = parseFloat(newCpa);
+    
     if (typeof newCpa !== "number" || newCpa < 0 || newCpa > 4) {
         throw new Error("Invalid CPA value. Please enter a number between 0 and 4.");
     }
@@ -30,7 +32,7 @@ async function findTopN(students, n) {
     return topN.map(student => student.mssv).join("\n");
 }
 
-(async () => {
+async function read_input() {
     try {
         const data = fs.readFileSync("data.json", "utf8");
         const studentsData = JSON.parse(data);
@@ -59,4 +61,9 @@ async function findTopN(students, n) {
     } catch (err) {
         console.error("Error:", err.message);
     }
-})();
+};
+
+module.exports = {
+    modifyCpa,
+    findTopN
+}

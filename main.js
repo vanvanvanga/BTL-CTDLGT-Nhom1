@@ -11,7 +11,7 @@ const fs = require("fs");
 const ap = require("./async-prompt");
 const log = require("./input.js"); // nhập các hàm/biến... từ file này
 const Van = require("./Van.js");
-// const Dat = require("./Dat.js");
+const Dat = require("./Dat.js");
 // const Minh = require("./Minh.js");
 const Trang = require("./Trang.js");
 
@@ -69,12 +69,13 @@ async function prompt() {
       prompt();
       break;
   
-    // case "modify":
-    //   if (cmd[1] === "cpa") {
-    //     const result = Dat.modifyCpa(cmd[2], parseFloat(cmd[3]), data);
-    //     console.log(result);
-    //   }
-    //   break;
+    case "modify":
+      if (cmd_s[1] === "cpa") {
+        const result = Dat.modifyCpa(data, parseFloat(cmd_s[2]), cmd_s[3]);
+        console.log(result);
+      }
+      prompt();
+      break;
   
     // case "findtop":
     //   const topResult = Dat.findTop(parseInt(cmd[1]), data);
@@ -107,6 +108,7 @@ async function prompt() {
       break;
     
     case "end":
+      console.log("Chương trình kết thúc tại đây.")
       break;
 
     default:
