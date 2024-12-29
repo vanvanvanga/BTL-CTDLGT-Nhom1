@@ -71,16 +71,14 @@ async function prompt() {
   
     case "modify":
       if (cmd_s[1] === "cpa") {
-        const result = Dat.modifyCpa(data, parseFloat(cmd_s[2]), cmd_s[3]);
-        console.log(result);
+        Dat.modifyCpa(data, parseFloat(cmd_s[2]), cmd_s[3]);
       }
       prompt();
       break;
   
-    // case "findtop":
-    //   const topResult = Dat.findTop(parseInt(cmd[1]), data);
-    //   console.log(topResult);
-    //   break;
+    case "findtop":
+      Dat.findTopN(data, parseInt(cmd_s[1]));
+      break;
   
     case "fill":
       log.addRand(cmd_s[1], data);
