@@ -1,6 +1,6 @@
 - Bài tập lớn môn Kĩ thuật lập trình.
 - Đề 2.
-- Nhóm:
+- Nhóm 1:
   - Nguyễn Hồng Vân 20231649
   - Trần Công Minh 20231611
   - Nguyễn Văn Đạt 20231571
