@@ -36,6 +36,7 @@ function help() {
       find canhcao                  Tìm các sinh viên đang bị cảnh cáo
       cnt <a> <b>                   Đếm số sinh viên có điểm cpa là nằm trong đoạn [a;b]
       cntSuspnd                     Tính số lượng sinh viên phải đình chỉ học
+      end                           Kết thúc chương trình
   `);
 }
 
