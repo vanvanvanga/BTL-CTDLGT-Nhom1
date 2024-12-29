@@ -12,7 +12,7 @@ const ap = require("./async-prompt");
 const log = require("./input.js"); // nhập các hàm/biến... từ file này
 const Van = require("./Van.js");
 const Dat = require("./Dat.js");
-// const Minh = require("./Minh.js");
+const Minh = require("./Minh.js");
 const Trang = require("./Trang.js");
 
 const path = "./data.json";
@@ -54,59 +54,69 @@ async function prompt() {
       help();
       prompt();
       break;
-  
+
     case "list":
       console.log(Trang.list(data));
       prompt();
       break;
-  
+
     case "find":
-      if (cmd_s[1]) {
-        console.log(Trang.find(cmd_s[1], data));
-      } else {
-        console.log("Vui lòng cung cấp MSSV để tìm kiếm.");
+      // if (cmd_s[1]) {
+      //   console.log(Trang.find(cmd_s[1], data));
+      // } else {
+      //   console.log("Vui lòng cung cấp MSSV để tìm kiếm.");
+      // }
+
+      if (cmd_s[1] === "canhcao") {
+        Minh.findCanhCao(data);
       }
       prompt();
       break;
-  
+
     case "modify":
       if (cmd_s[1] === "cpa") {
         Dat.modifyCpa(data, parseFloat(cmd_s[2]), cmd_s[3]);
       }
       prompt();
       break;
-  
+
     case "findtop":
       Dat.findTopN(data, parseInt(cmd_s[1]));
+      prompt();
       break;
-  
+
+    case "findbottom":
+      Minh.findBottomN(data, parseInt(cmd_s[1]));
+      prompt();
+      break;
+
     case "fill":
       log.addRand(cmd_s[1], data);
       prompt();
       break;
-  
+
     case "input":
       log.add(cmd, data);
       prompt();
       break;
-  
+
     case "forceFill":
       log.addExtended(data);
       prompt();
       break;
-  
+
     case "cnt":
       Van.cntBtwn(cmd_s[1], cmd_s[2], data);
       prompt();
       break;
-  
+
     case "cntSuspnd":
       Van.cntSuspnd(data);
       prompt();
       break;
-    
+
     case "end":
-      console.log("Chương trình kết thúc tại đây.")
+      console.log("Chương trình kết thúc tại đây.");
       break;
 
     default:
@@ -115,9 +125,6 @@ async function prompt() {
       prompt();
       break;
   }
-  
 }
 
 prompt();
-
-

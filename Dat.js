@@ -24,10 +24,10 @@ async function findTopN(students, n) {
 
     const sortedStudents = students.sort((a, b) => b.cpa - a.cpa);
     const topN = sortedStudents.slice(0, n);
-    resolve(topN.map((student) => student.mssv).join("\n"));
+    resolve(`Top ${n} sinh viên có CPA cao nhất là: \n` + topN.map((student) => student.mssv).join("\n"));
   });
 
-	console.log(`Top ${n} sinh viên có điểm cao nhất là: \n ${await result}`);
+	console.log(await result);
 }
 
 module.exports = {
