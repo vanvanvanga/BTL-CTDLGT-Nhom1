@@ -14,9 +14,7 @@ function find(mssv, data) {
       const student = data.find((sv) => sv.mssv === parseInt(mssv));
       if (!student) {
         console.log(`Không tìm thấy sinh viên có MSSV ${mssv}.`);
-      }
-
-      console.log(`${student.mssv} "${student.ten}" ${student.cpa} ${student.canhCao}`);
+      } else {console.log(`${student.mssv} "${student.ten}" ${student.cpa} ${student.canhCao}`);}
     } else {
       console.log("Vui lòng cung cấp MSSV để tìm kiếm.");
     }

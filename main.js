@@ -15,7 +15,7 @@ const Dat = require("./Dat.js");
 const Minh = require("./Minh.js");
 const Trang = require("./Trang.js");
 
-const path = "./data.json";
+const path = "./dataStudent_01.json";
 let data = []; // mảng chứa thông tin sinh viên
 
 if (fs.existsSync(path) && fs.statSync(path).size !== 0) {
