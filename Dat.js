@@ -1,4 +1,5 @@
 const log = require("./input.js");
+const srt = require("./sort.js");
 
 async function modifyCpa(students, mssv, newCpa) {
   newCpa = parseFloat(newCpa);
@@ -15,7 +16,7 @@ async function modifyCpa(students, mssv, newCpa) {
 
     student.cpa = newCpa;
     log.save(students);
-    resolve(`CPA đã cập nhật cho sinh viên ${mssv} thành ${newCpa}.`);
+    resolve(`Đã cập nhật CPA của sinh viên ${mssv} thành ${newCpa}.`);
   });
 
   console.log(await result);
@@ -25,7 +26,8 @@ async function findTopN(students, n) {
   let result = new Promise((resolve, reject) => {
     if (n < 1) reject("Tham số n phải >= 1");
 
-    const sortedStudents = students.sort((a, b) => b.cpa - a.cpa);
+    const sortedStudents = [...students];
+    srt.sort(sortedStudents, "desc");
     const topN = sortedStudents.slice(0, n);
     resolve(`Top ${n} sinh viên có CPA cao nhất là: \n` + topN.map((student) => student.mssv).join("\n"));
   });
