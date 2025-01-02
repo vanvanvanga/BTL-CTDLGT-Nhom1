@@ -1,0 +1,62 @@
+[
+  {
+    "mssv": 20170001,
+    "ten": "Võ Hưng",
+    "cpa": 3.33,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150002,
+    "ten": "Võ Trân",
+    "cpa": 2.25,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240003,
+    "ten": "Vũ Đạt",
+    "cpa": 0.46,
+    "canhCao": 3
+  },
+  {
+    "mssv": 20220004,
+    "ten": "Huỳnh Thy",
+    "cpa": 3.23,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20220005,
+    "ten": "Đỗ Kiệt",
+    "cpa": 3.7,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20150006,
+    "ten": "Phạm My",
+    "cpa": 3.32,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200007,
+    "ten": "Phạm Khôi",
+    "cpa": 1.03,
+    "canhCao": 1
+  },
+  {
+    "mssv": 20170008,
+    "ten": "Huỳnh Quỳnh",
+    "cpa": 2.94,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20240009,
+    "ten": "Hồ Hưng",
+    "cpa": 3.18,
+    "canhCao": 0
+  },
+  {
+    "mssv": 20200010,
+    "ten": "Đặng Nghi",
+    "cpa": 1.82,
+    "canhCao": 0
+  }
+]

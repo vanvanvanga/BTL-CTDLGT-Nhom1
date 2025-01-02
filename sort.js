@@ -2,7 +2,7 @@
 // start, end, pivot here all refer to indices/locations
 function partition(arr, start, end, opt) {
   // move pivotValue to correct place and return said correct place
-  let pivotValue = arr[end];
+  let pivotValue = arr[end].cpa;
   let j = start,
     i = j - 1;
   let temp;
@@ -16,7 +16,7 @@ function partition(arr, start, end, opt) {
   switch (opt) {
     case "asc":
       for (; j < end; j++) {
-        if (arr[j] < pivotValue) {
+        if (arr[j].cpa < pivotValue) {
           i++;
           swap(arr, i, j);
         }
@@ -25,7 +25,7 @@ function partition(arr, start, end, opt) {
 
     case "desc":
       for (; j < end; j++) {
-        if (arr[j] > pivotValue) {
+        if (arr[j].cpa > pivotValue) {
           i++;
           swap(arr, i, j);
         }
@@ -55,10 +55,12 @@ function quickSort(arr, start, end, opt) {
 }
 
 function sort(arr, opt) {
+  // console.log(arr);
   let end = arr.length - 1;
   quickSort(arr, 0, end, opt);
+  // console.log(arr);
 }
 
 module.exports = {
-  sort,
+  sort
 };

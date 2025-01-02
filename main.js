@@ -15,7 +15,7 @@ const Dat = require("./Dat.js");
 const Minh = require("./Minh.js");
 const Trang = require("./Trang.js");
 
-const path = "./dataStudent_01.json";
+const path = "./data.json";
 module.exports = {
   path
 }

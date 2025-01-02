@@ -1,7 +1,10 @@
+const srt = require("./sort.js");
+
 async function findBottomN(students, n) {
   let result = new Promise((resolve, reject) => {
     if (n < 1) reject("Tham số n phải >= 1");
-    const sortedStudents = students.sort((a, b) => a.cpa - b.cpa);
+    const sortedStudents =  [...students];
+    srt.sort(sortedStudents, "asc");
     const bottomN = sortedStudents.slice(0, n);
     resolve(
       `Top ${n} sinh viên có CPA thấp nhất là: \n` +
