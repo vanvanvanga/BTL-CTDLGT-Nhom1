@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "async-prompt": "^1.0.1"
+  }
+}

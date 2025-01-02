@@ -1,7 +1,11 @@
-- Bài tập lớn môn Kĩ thuật lập trình.
+- Bài tập lớn môn Cấu trúc dữ liệu và giải thuật.
 - Đề 2.
 - Nhóm 1:
   - Nguyễn Hồng Vân 20231649
   - Trần Công Minh 20231611
   - Nguyễn Văn Đạt 20231571
   - Nguyễn Huyền Trang 20231640
+
+- TO DO LIST: Viết lại hàm sort và hàm find
+  - Hàm sort: Xuất hiện ở file Minh.js, Dat.js
+  - Hàm find: Xuất hiện ở file Trang.js

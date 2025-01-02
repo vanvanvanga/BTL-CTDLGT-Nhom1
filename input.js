@@ -198,7 +198,8 @@ function addExtended(data) {
 
 function save(data) {
   let text = JSON.stringify(data, null, 2); // 2 pretty prints JSON file. see https://stackoverflow.com/a/7220510
-  fs.writeFile("dataStudent_01.json", text, (err) => {
+  const main = require("./main.js");
+  fs.writeFile(main.path, text, (err) => {
     console.log(err ? err : "File saved successfully!");
   });
 }

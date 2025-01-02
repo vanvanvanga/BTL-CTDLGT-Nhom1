@@ -8,7 +8,7 @@
 // ---------------------
 
 const fs = require("fs");
-const ap = require("./async-prompt");
+const ap = require("async-prompt");
 const log = require("./input.js"); // nhập các hàm/biến... từ file này
 const Van = require("./Van.js");
 const Dat = require("./Dat.js");
@@ -16,6 +16,9 @@ const Minh = require("./Minh.js");
 const Trang = require("./Trang.js");
 
 const path = "./dataStudent_01.json";
+module.exports = {
+  path
+}
 let data = []; // mảng chứa thông tin sinh viên
 
 if (fs.existsSync(path) && fs.statSync(path).size !== 0) {
@@ -125,3 +128,4 @@ async function prompt() {
 }
 
 prompt();
+

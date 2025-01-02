@@ -10,7 +10,7 @@ async function modifyCpa(students, mssv, newCpa) {
 
     const student = students.find((student) => student.mssv === mssv);
     if (!student) {
-      reject(`Student với MSSV ${mssv} không tìm thấy.`);
+      reject(`Không tìm thấy sinh viên có MSSV ${mssv}.`);
     }
 
     student.cpa = newCpa;
