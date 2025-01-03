@@ -1,5 +1,6 @@
 const log = require("./input.js");
 const srt = require("./sort.js");
+const f = require("./find.js");
 
 async function modifyCpa(students, mssv, newCpa) {
   newCpa = parseFloat(newCpa);
@@ -9,7 +10,7 @@ async function modifyCpa(students, mssv, newCpa) {
       reject(" Giá trị CPA không hợp lệ. Vui lòng nhập một số từ 0 đến 4.");
     }
 
-    const student = students.find((student) => student.mssv === mssv);
+    const student = f.lookForMSSV(students, mssv);
     if (!student) {
       reject(`Không tìm thấy sinh viên có MSSV ${mssv}.`);
     }
