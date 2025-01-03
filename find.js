@@ -5,6 +5,7 @@ function lookForMSSV (array, key) {
   for (let i = 0; i < n; i++) {
     if (array[i].mssv === parseInt(key)) {
       found = array[i];
+      break;
     }  
   }
 
