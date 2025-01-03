@@ -13,7 +13,6 @@
 
 - Trần Công Minh 20231611:
   - File Minh.js (câu 5, 6)
-  - Hàm find
 
 - Nguyễn Văn Đạt 20231571
   - File Dat.js (câu 3, 4)
